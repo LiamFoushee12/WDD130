@@ -1,0 +1,33 @@
+.quote-card {
+    width: 500px;
+    height: 720px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    grid-template-rows: 300px 1fr;
+}
+.main-img {
+    width: 100%;
+    height: 100%;
+    grid-column: 1/4;
+    grid-row: 1/3;
+}
+.quote-section {
+    grid-column: 2;
+    grid-row: 1;
+}
+.quote {
+    font-weight: bold;
+    text-align: center; 
+    color: white;
+    margin-top: 20px;
+    line-height: 1.5em;
+    font-family: 'Lobster', cursive;
+    font-size: 1.8em;
+}
+body {
+    background-color: #9e9896;
+}
+
