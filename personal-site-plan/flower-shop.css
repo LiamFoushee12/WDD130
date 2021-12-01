@@ -80,6 +80,14 @@ header {
     font-family: 'Irish Grover', cursive;
     font-size: 2em;
 }
+.bouquets {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 .popular-bouquets {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -101,6 +109,21 @@ header {
     grid-row: 1;
     font-family: 'Varela Round', sans-serif;
 }
+.bouquet4 {
+    grid-column: 1/2;
+    grid-row: 2;
+    font-family: 'Varela Round', sans-serif;
+}
+.bouqet5 {
+    grid-column: 2/3;
+    grid-row: 2;
+    font-family: 'Varela Round', sans-serif;
+}
+.bouqet6 {
+    grid-column: 3/4;
+    grid-row: 2;
+    font-family: 'Varela Round', sans-serif;
+}
 .bouquet-img {
     width: 100%;
     height: 60%;
@@ -118,6 +141,7 @@ footer {
 }
 .bouquet-text {
     text-align: center;
+    font-family: 'Varela Round', sans-serif;
 }
 button {
     display: block;
@@ -129,6 +153,7 @@ button {
     background-color: white;
     transition: transform .5s;
     box-shadow: 5px 5px 10px rgb(185, 180, 180);
+    grid-row: 2;
 }
 button:hover {
     transform: scale(1.1);
