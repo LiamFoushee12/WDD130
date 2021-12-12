@@ -7,14 +7,16 @@
     <title>House of Flowers | Bouqets</title>
     <link rel="stylesheet" href="flower-shop.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Varela+Round&display=swap');
         form {
     /* Center the form on the page */
 margin: 0 auto;
-width: 500px;
+width: 1000px;
 /* Form outline */
 padding: 1em;
-border: 1px solid #CCC;
 border-radius: 1em;
+grid-column: 2/3;
+grid-row: 2;
 }
 
 ul {
@@ -41,7 +43,7 @@ textarea {
 font: 1em sans-serif;
 
 /* Uniform text field size */
-width: 300px;
+width: 400px;
 box-sizing: border-box;
 
 /* Match form field borders */
@@ -59,7 +61,7 @@ textarea {
 vertical-align: top;
 
 /* Provide space to type some text */
-height: 5em;
+height: 8em;
 }
 
 .button {
@@ -101,29 +103,35 @@ margin-left: .5em;
         </nav>
     </header>
     <main>
-        <div class='hero-image-box'>
-            <img class='hero-image' src='../wwr/styles/images/flowers-on-bike-page3.jpeg' alt='Field of Flowers'>
+        <div class='hero'>
+            <div class='hero-image-box3'>
+                <img class='hero-image3' src='../wwr/styles/images/flowers-on-bike-page3.jpeg' alt='Field of Flowers'>
+            </div>
+            <div id="feedback"></div>
+            <form action="/my-handling-form-page" method="post">
+                <ul>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                <label for="mail">E-mail:</label>
+                <input type="email" id="mail" name="user_email">
+                </li>
+                <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message"></textarea>
+                </li>
+                <li class="button">
+                    <button type="submit">Submit</button>
+                </li>
+                </ul>
+            </form>
+            <section class='flower-header'>
+                <h1 class='hero-text3'>Send Us a Message</h1>
+                <h2 class='flower-header-text'>Reach out to us about anything at all and we will have somebody get back to you within 2-3 buisiness days. Thank you!</h2>
+            </section>
         </div>
-        <div id="feedback"></div>
-        <form action="/my-handling-form-page" method="post">
-            <ul>
-             <li>
-               <label for="name">Name:</label>
-               <input type="text" id="name" name="user_name">
-             </li>
-             <li>
-               <label for="mail">E-mail:</label>
-               <input type="email" id="mail" name="user_email">
-             </li>
-             <li>
-               <label for="msg">Message:</label>
-               <textarea id="msg" name="user_message"></textarea>
-             </li>
-             <li class="button">
-                <button type="submit">Submit</button>
-              </li>
-            </ul>
-           </form>
     </main>
     <footer>
         <h3 class='copyright'>House of Flowers &copy; 2021 - Aidan Foushee</h3>
