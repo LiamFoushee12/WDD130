@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,87 +9,92 @@
     <link rel="stylesheet" href="flower-shop.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Irish+Grover&family=Varela+Round&display=swap');
+
         form {
-    /* Center the form on the page */
-margin: 0 auto;
-width: 1000px;
-/* Form outline */
-padding: 1em;
-border-radius: 1em;
-grid-column: 2/3;
-grid-row: 2;
-}
+            /* Center the form on the page */
+            margin: 0 auto;
+            width: 1000px;
+            /* Form outline */
+            padding: 1em;
+            border-radius: 1em;
+            grid-column: 2/3;
+            grid-row: 2;
+        }
 
-ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
 
-form li + li {
-margin-top: 1em;
-}
+        form li+li {
+            margin-top: 1em;
+        }
 
-label {
-/* Uniform size & alignment */
-display: inline-block;
-width: 90px;
-text-align: right;
-}
+        label {
+            /* Uniform size & alignment */
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
 
-input,
-textarea {
-/* To make sure that all text fields have the same font settings
+        input,
+        textarea {
+            /* To make sure that all text fields have the same font settings
     By default, textareas have a monospace font */
-font: 1em sans-serif;
+            font: 1em sans-serif;
 
-/* Uniform text field size */
-width: 400px;
-box-sizing: border-box;
+            /* Uniform text field size */
+            width: 400px;
+            box-sizing: border-box;
 
-/* Match form field borders */
-border: 1px solid #999;
-}
+            /* Match form field borders */
+            border: 1px solid #999;
+        }
 
-input:focus,
-textarea:focus {
-/* Additional highlight for focused elements */
-border-color: #000;
-}
+        input:focus,
+        textarea:focus {
+            /* Additional highlight for focused elements */
+            border-color: #000;
+        }
 
-textarea {
-/* Align multiline text fields with their labels */
-vertical-align: top;
+        textarea {
+            /* Align multiline text fields with their labels */
+            vertical-align: top;
 
-/* Provide space to type some text */
-height: 8em;
-}
+            /* Provide space to type some text */
+            height: 8em;
+        }
 
-.button {
-/* Align buttons with the text fields */
-padding-left: 90px; /* same size as the label elements */
-}
+        .button {
+            /* Align buttons with the text fields */
+            padding-left: 90px;
+            /* same size as the label elements */
+        }
 
-button {
-/* This extra margin represent roughly the same space as the space
+        button {
+            /* This extra margin represent roughly the same space as the space
     between the labels and their text fields */
-margin-left: .5em;
-}
-#feedback {
-    background-color: antiquewhite;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: .5em;
-    /* make this element invisible until we are ready for it */
-    display: none;       
-}
-.moveDown {
-    margin-top: 3em;
-}
+            margin-left: .5em;
+        }
+
+        #feedback {
+            background-color: antiquewhite;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: .5em;
+            /* make this element invisible until we are ready for it */
+            display: none;
+        }
+
+        .moveDown {
+            margin-top: 3em;
+        }
     </style>
 </head>
+
 <body>
     <header>
         <a id='logo_link' href='index.html'>
@@ -110,31 +116,32 @@ margin-left: .5em;
             <div id="feedback"></div>
             <form action="/my-handling-form-page" method="post">
                 <ul>
-                <li>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name">
-                </li>
-                <li>
-                <label for="mail">E-mail:</label>
-                <input type="email" id="mail" name="user_email">
-                </li>
-                <li>
-                <label for="msg">Message:</label>
-                <textarea id="msg" name="user_message"></textarea>
-                </li>
-                <li class="button">
-                    <button type="submit">Submit</button>
-                </li>
+                    <li>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="user_name">
+                    </li>
+                    <li>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" id="mail" name="user_email">
+                    </li>
+                    <li>
+                        <label for="msg">Message:</label>
+                        <textarea id="msg" name="user_message"></textarea>
+                    </li>
+                    <li class="button">
+                        <button type="submit">Submit</button>
+                    </li>
                 </ul>
             </form>
             <section class='flower-header'>
                 <h1 class='hero-text3'>Send Us a Message</h1>
-                <h2 class='flower-header-text'>Reach out to us about anything at all and we will have somebody get back to you within 2-3 buisiness days. Thank you!</h2>
+                <h2 class='flower-header-text'>Reach out to us about anything at all and we will have somebody get back
+                    to you within 2-3 buisiness days. Thank you!</h2>
             </section>
         </div>
     </main>
     <footer>
-        <h3 class='copyright'>House of Flowers &copy; 2021 - Aidan Foushee</h3>
+        <h3 class='copyright'>House of Flowers &copy; 2023 - Liam Foushee</h3>
         <h3 class='phone-number'>Call Us - 456-321-7890</h3>
         <div class="social">
             <a class='social' href="https://facebook.com" target='_blank'>
@@ -154,11 +161,11 @@ margin-left: .5em;
         // get the form so we can read what was entered in it.
         const formElement = document.forms[0];
         // add a 'listener' to wait for a submission of our form. When that happens run the code below.
-        formElement.addEventListener('submit', function(e) {
+        formElement.addEventListener('submit', function (e) {
             // stop the form from doing the default action.
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello ' + formElement.user_name.value + '! Thank you for your message. We will get back with you as soon as possible!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
@@ -166,4 +173,5 @@ margin-left: .5em;
         });
     </script>
 </body>
+
 </html>
